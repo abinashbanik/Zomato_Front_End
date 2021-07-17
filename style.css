@@ -41,7 +41,7 @@ body {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
+    margin-right: 3px;
     margin-left: auto;
       
 }
@@ -157,7 +157,7 @@ body {
 }
 #view_more{
     /* margin-top: 50px;; */
-    width:100%;
+    width:92%;
     position:absolute;
     margin-bottom: 10px;
 }
