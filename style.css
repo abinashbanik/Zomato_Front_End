@@ -148,8 +148,13 @@ body {
 .food_card_description{
     padding:15px;
 }
+.explore_menu_container{
+    position:relative;
+}
 #view_more{
-    width:100%;
+    /* margin-top: 50px;; */
+    /* width:100%; */
+    position:absolute;
 }
 
 #view_more:hover{
@@ -322,7 +327,7 @@ footer{
     display: flex;
     flex-direction:column;
     align-items:center;
-    /* justify-content: center; */
+    justify-content: center;
     border-radius: 4rem 1rem 0 0;
     background-image: linear-gradient(
         to right,
@@ -369,11 +374,34 @@ footer > ul > li:hover{
         flex-direction: row-reverse;
         align-items:center;
     }
+    .hero_image{
+
+    }
+    .explore_menue_container{
+        position:relative;
+        margin: 5px 0;
+        /* margin-bottom: 200px; */
+    }
+    .explore_menu_gradient_bg{
+        position: absolute;
+        width: 100%;
+        height:100%;
+        transform: skewY(-5deg);
+        z-index: -3;
+    }
     .explore_menue_lists{
         display:flex;
-        gap:15px;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+        padding-top: 2rem;
+        /* gap:15px;
         margin-top: 40px;
-        padding:0 30px;
+        padding:0 30px; */
+    }
+    .food_card{
+        flex-basis: 30%;
+        background-color: #fff;
+        /* border-radius: 6px; */
     }
     #pizza_card{
         margin-top: -20px;
@@ -385,31 +413,123 @@ footer > ul > li:hover{
     }
     .explore_menue_container{
         position: relative;
+        margin-bottom:50px;
     }
     .explore_menu_gradient_bg{
         position:absolute;
         top:0;
         left:0;
         width:100%;
-        height:100%;
+        height:110%;
         background-image: linear-gradient(
             to right,
             #ff512f 0%,
             #dd2476 51%,
             #ff512f 100%
         );
-        transform:skewY(-5deg);
+        transform:skewY(-6deg);
         z-index: -3;
+        border-radius: 10px 0 16px 0;
+        /* margin-bottom:50px; */
     }
     .restaurant_container{
+        margin-top:100px;
         display:flex;
+        justify-content: space-between;
         align-items:center;
+        
     }
     .restaurant_text{
         width:100%;
         font-size:40px;
 
     }
+    .restaurant_images_row_one{
+        justify-content: center;
+    }
+    .restaurant_images_row_two{
+        margin-top:  3px;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .email_items_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text-ul{
+        /* display:flex;
+        justify-content: center; */
+        
+        font-family: 'Otomanopee One', sans-serif;
+        font-size:25px;
+        margin-top:50px;
+        margin-bottom:25px;
+        position:relative;
+        left: 98px;
+    }
+    .email_items_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* flex-direction:column-reverse; */
+    }
+    
+    .email_subcribe_input{
+        display:flex;
+        justify-content:space-evenly;
+        
+    }
+   
+    .email_input{
+        width:150%;
+        border:1px solid #ee89a0;
+        background-color: #fcedf0;
+        color: #1d3557;
+        font-weight: 700;
+        padding: 0.5rem;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        
+        /* justify-content: left; */
+    }
+    .email_input:hover::placeholder{
+        color: #bdbcbc;
+        
+    }
+    #get_updates{
+        width:20%;
+        height:36px;
+        padding:1%;
+        
+    }
+    #get_updates:hover{
+        font-size:15px;
+        /* height:50%; */
+        
+        border-radius:10px;
+
+    }
+    .quote_container{
+        height: 300px;
+    }
+    .quote_image_overlay{
+        height: 300px;
+        box-shadow:20px 0 100px 1px rgb(56, 141, 211)
+    }
+    .quote_image_text{
+        font-size: 2rem;
+        font-weight:500;
+        line-height: 1.5;
+    }
+   
+    footer {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
 }
 
 @media (min-width: 1020px){
@@ -487,10 +607,72 @@ footer > ul > li:hover{
         height: 260px;
     
     }
+    .text-ul{
+        /* display:flex;
+        justify-content: center; */
+        
+        font-family: 'Otomanopee One', sans-serif;
+        font-size:35px;
+        margin-top:50px;
+        margin-bottom:25px;
+        position:relative;
+        left: 19%;
+    }
+    .email_items_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* flex-direction:column-reverse; */
+    }
+    
+    .email_subcribe_input{
+        display:flex;
+        justify-content:space-evenly;
+        
+    }
+   
+    .email_input{
+        width:190%;
+        border:1px solid #ee89a0;
+        background-color: #fcedf0;
+        color: #1d3557;
+        font-weight: 700;
+        padding: 0.5rem;
+        border-radius: 5px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        
+        /* justify-content: left; */
+    }
+    .email_input:hover::placeholder{
+        color: #bdbcbc;
+        
+    }
+    #get_updates{
+        width:15%;
+        height:15%;
+        padding:.65%;
+        /* left: 300px; */
+        
+    }
+    #get_updates:hover{
+        font-size:15px;
+        /* height:50%; */
+        
+        border-radius:10px;
+
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
 }
 
     @media (min-width: 1400px) {
         .container {
             max-width: 1250px;
         }
+        
     }
