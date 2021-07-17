@@ -101,9 +101,12 @@ body {
     right: auto;
     left: auto;
     z-index: 2;
+    margin-top: 30px;
+    background-image:linear-gradient(20);
+    opacity:0.9;
     
     
-    border-radius:  0 0 8px 8px;
+    border-radius:  0 8px 8px 8px;
     /* border-radius: 10px; */
     box-shadow: 0 25px 50px -12px rgba(58, 49, 49, 0.555);
     
@@ -112,6 +115,7 @@ body {
 .hero_image_shape{
     position: absolute;
     right: 2;
+    opacity:1;
 }
 .hero_image_pattern{
     position:relative;
@@ -153,8 +157,9 @@ body {
 }
 #view_more{
     /* margin-top: 50px;; */
-    /* width:100%; */
+    width:100%;
     position:absolute;
+    margin-bottom: 10px;
 }
 
 #view_more:hover{
@@ -169,8 +174,8 @@ body {
     max-width:fit-content;
 } */
 .restaurant_text{
-    font-size:30px;
-    margin-top:50px;
+    
+    margin-top:90px;
     margin-bottom:25px;
     text-align:left
     
@@ -251,7 +256,7 @@ body {
  
 
 .email_items_container{
-  margin-top:10px ;
+  margin-top:50px ;
   width:100%;
   padding: 2px;
   margin-right: auto;
@@ -328,7 +333,7 @@ footer{
     flex-direction:column;
     align-items:center;
     justify-content: center;
-    border-radius: 4rem 1rem 0 0;
+    border-radius: 4rem 0 0 0;
     background-image: linear-gradient(
         to right,
         #ff512f 0%,
@@ -365,17 +370,28 @@ footer > ul > li:hover{
 
 @media (min-width: 768px){
     .navbar {
+        /* display: flex; */
+        position: fixed;
+        width: 99%;
         justify-content: space-between;
-        padding: 1px 30px;
+        top: 0;
+        /* left: 0;
+        right: 0; */
+        padding: 1em;
+        z-index: 100;
+        /* padding: 0px 9px; */
+        height: 80px;
+        
+        
     }
     .hero_container{
-        margin-top: 20px;
+        margin-top: 90px;
         display:flex;
         flex-direction: row-reverse;
         align-items:center;
     }
     .hero_image{
-
+        margin-top: 30px;
     }
     .explore_menue_container{
         position:relative;
@@ -529,6 +545,7 @@ footer > ul > li:hover{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        border-radius: 4rem .5rem 0 0;
       }
 }
 
@@ -543,13 +560,28 @@ footer > ul > li:hover{
         margin-right: auto;
         margin-left: auto;
       }
-      
+      .navbar {
+        /* display: flex; */
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        top: 0;
+        /* left: 0;
+        right: 0; */
+        padding: 1em;
+        z-index: 100;
+        /* padding: 0px 9px; */
+        height: 80px;
+        
+        
+    } 
     .navbar_brand{
         width:150px;
     }
     .button_primary{
-        padding: 20px;
+        padding: 10px;
         font-size: 20px;
+        border-radius: 12px;
     }
     .hero_container{
         margin-bottom: 90px;
